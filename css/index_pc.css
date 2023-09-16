@@ -1528,9 +1528,7 @@
     /* ----------------sub_3----------------- */
     
     
-    #main_sub3{
-        /* width: 1920px; */
-        
+    #main_sub3{        
         margin: 0 auto;
         padding-top: 101px;
         text-align: center;
@@ -1545,7 +1543,7 @@
     }
     
     .subfour>.all_menu{
-        width: 1250px;
+        width: 80%;
         font-size: 17px;
         display: flex;
         justify-content: space-between;
@@ -1574,7 +1572,7 @@
     
     }
     .sub_bbbb ul{
-        width: 1580px;
+        width: 89%;
         display:flex;       
         flex-wrap: wrap;
         margin: 0 auto;
