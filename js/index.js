@@ -93,7 +93,7 @@ $(document).ready(function(){
         if(count>=2){count=0}        
         $(".trainone").css("transform","translateX("+(-50*count)+"%)")        
     },3000)
-    clearInterval(timer);
+    // clearInterval(timer);
         
 
     
@@ -185,7 +185,8 @@ $(document).ready(function(){
     })
         
 
-    $(".thsli>li").click(function(){            
+    $(".thsli>li").click(function(e){  
+        e.preventDefault();          
         $(".thsli>li").removeClass("on")
         $(this).addClass("on")
     })
