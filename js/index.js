@@ -9,15 +9,6 @@ $(document).ready(function(){
     }
 
 
-    // 모바일 화면 세로 높이
-
-    function setScreenSize() {
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
-    }
-    setScreenSize();
-    window.addEventListener('resize', setScreenSize);
-
 
     // 메뉴바
 
@@ -93,7 +84,7 @@ $(document).ready(function(){
         if(count>=2){count=0}        
         $(".trainone").css("transform","translateX("+(-50*count)+"%)")        
     },3000)
-    // clearInterval(timer);
+    
         
 
     
@@ -102,15 +93,7 @@ $(document).ready(function(){
         if(count>=2){count=0}        
         $(".momain>.trainoneMo").css("transform","translateX("+(-50*count)+"%)")        
     },3000)
-    clearInterval(timer);
-
-    // setInterval(function(){
-    //     count++;
-    //     if(count>2){count=0}
-    //     $(".bestul> li").removeClass("on")
-    //     $(".bestul> li").eq(count).addClass("on");
-    // },2500);
-    // clearInterval(timer);
+    // clearInterval(Interval);
 
     
 
@@ -118,7 +101,7 @@ $(document).ready(function(){
 
     // 마우스 휠 동작
 
-    $(".pcmain >div").on("wheel DOMMouseScroll",function(event){
+    $(".wrap>.pcmain>section").on("wheel DOMMouseScroll",function(event){
     //    console.log(event)
         let E = event.originalEvent
         let delta = 0;
@@ -126,7 +109,7 @@ $(document).ready(function(){
     //    scroll_top = scroll_top + 60;
     //     scroll.style.top = scroll_top + "px";
         if(E.detail){
-        delta = E.detail * -0
+        delta = E.detail * - 40
         }else{
         delta = E.wheelDelta
         }
@@ -134,55 +117,23 @@ $(document).ready(function(){
         if(delta<0){
         //마우스 휠을 내렸을 때
         if($(this).next().length!=0){
-            let posTop = $(this).next().offset().top - 76
+            let posTop = $(this).next().offset().top - 76;
             $("html,body").stop().animate({scrollTop:posTop},1000)
         }
         // $("header").css("background","#fff")
         }else{
         //마우스 휠을 올렸을 때
         if($(this).prev().length!=0){
-            let posTop = $(this).prev().offset().top - 76
+            let posTop = $(this).prev().offset().top - 76;
             $("html,body").stop().animate({scrollTop:posTop},1000)
         }
         }
         return false
 
-    }) 
-
-   
+    })    
 
     
 
-    $("#main_sub2>div").on("wheel DOMMouseScroll",function(event){
-        //    console.log(event)
-        let E = event.originalEvent
-        let delta = 0;
-
-    //    scroll_top = scroll_top + 60;
-    //     scroll.style.top = scroll_top + "px";
-        if(E.detail){
-        delta = E.detail * -0
-        }else{
-        delta = E.wheelDelta
-        }
-        
-        if(delta<0){
-        //마우스 휠을 내렸을 때
-        if($(this).next().length!=0){
-            let posTop = $(this).next().offset().top - 77
-            $("html,body").stop().animate({scrollTop:posTop},1000)
-        }
-        
-        }else{
-        //마우스 휠을 올렸을 때
-        if($(this).prev().length!=0){
-            let posTop = $(this).prev().offset().top - 77
-            $("html,body").stop().animate({scrollTop:posTop},1000)
-        }
-        }
-        return false
-
-    })
         
 
     $(".thsli>li").click(function(e){  

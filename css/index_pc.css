@@ -515,7 +515,7 @@
     /* pure */
     .pure{
         /* border: 1px solid red; */
-        height: 100vh;
+        height: calc(100vh - 76px);
         margin: 0 auto;
         display: flex;
         background: #fff;
@@ -546,7 +546,7 @@
     /* safety */
     .safety{
         /* border: 1px solid red; */
-        height: 100vh;
+        height: calc(100vh - 76px);
         margin: 0 auto;
         display: flex;
         background: #fff;
@@ -634,7 +634,7 @@
     
     /* care */
     .care{
-        height: 100vh;
+        height: calc(100vh - 76px);
         margin: 0 auto;
         display: flex;  
         align-items: center;  
@@ -718,7 +718,7 @@
     .adult{
         /* border: 1px solid red; */
         background: #f9fdff;
-        height: 100vh;
+        height: calc(100vh - 76px);
         margin: 0 auto;
         position: relative;
         min-width: 1320px;
@@ -752,7 +752,7 @@
         font-weight:600;
         color: #529ACC;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         transition: all 0.5s ease 0s;
         line-height: 40px;
     }
@@ -766,7 +766,7 @@
     .adult>div>ul{
         display:flex;
         justify-content: space-between;
-        transform: translateY(48%);
+        transform: translateY(38%);
     }
     .adult>div>ul>li{
         position: relative;
