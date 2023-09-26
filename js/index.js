@@ -78,22 +78,23 @@ $(document).ready(function(){
     
    // 배너 슬라이드
 
-    let count = 0;
+    let count1 = 0;
     setInterval(function(){
-        count++;
-        if(count>=2){count=0}        
-        $(".trainone").css("transform","translateX("+(-50*count)+"%)")        
+        count1++;
+        if(count1>=2){count1=0}        
+        $(".trainone_pc").css("transform","translateX("+(-50*count1)+"%)")    
+        console.log(count1)    
     },3000)
     
         
 
-    
+    let count2 = 0;
     setInterval(function(){
-        count++;
-        if(count>=2){count=0}        
-        $(".momain>.trainoneMo").css("transform","translateX("+(-50*count)+"%)")        
+        count2++;
+        if(count2>=2){count2=0}        
+        $(".trainone_mo").css("transform","translateX("+(-50*count2)+"%)")        
     },3000)
-    // clearInterval(Interval);
+    clearInterval(Interval);
 
     
 
