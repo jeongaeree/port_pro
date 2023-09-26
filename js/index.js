@@ -94,7 +94,7 @@ $(document).ready(function(){
         if(count2>=2){count2=0}        
         $(".trainone_mo").css("transform","translateX("+(-50*count2)+"%)")        
     },3000)
-    clearInterval(Interval);
+    // clearInterval(Interval);
 
     
 
